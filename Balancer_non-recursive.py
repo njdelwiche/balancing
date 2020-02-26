@@ -5,16 +5,13 @@ import random
 from random import randint
 import sys
 
-## read the class roster file
-roster = pd.read_csv('data/2020_roster.csv')
+roster = pd.read_csv(sys.argv[2])
 
 ## will use this vairable later for double checking
 roster_backup = pd.read_csv('data/2020_roster.csv')
 
 total = len(roster)
-
-## set how many groups you want
-num_groups = 3
+num_groups = sys.argv[3]
 
 groups_storage = []
 
