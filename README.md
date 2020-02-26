@@ -15,5 +15,5 @@ It then balances the groups by semi-randomly swapping items. It ensures not to b
 
 ## Usage Example
 ``` python
-python balancer.py roster.csv gender 3
+python balancer.py roster.csv 3
 ```
