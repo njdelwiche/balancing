@@ -12,3 +12,8 @@ It then balances the groups by semi-randomly swapping items. It ensures not to b
 * Once the first group is finished, it breaks another sub-group from the larger roster 
 * It then swaps items in the second-group with only the larger (yet now slightly diminished) roster, leaving the first group untouched
 * It continues until all groups are balanced 
+
+## Usage Example
+``` python
+python balancer.py roster.csv 3
+```
