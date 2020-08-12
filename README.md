@@ -1,6 +1,6 @@
 # Balancing Groups
  
-This script creates balanced sub-groups from a larger roster. After loading in a csv roster, the user can specify the group sizes and criteria along which they are balancing.
+This script creates (*mostly*) balanced sub-groups from a larger roster. After loading in a csv roster, the user can specify the group sizes and criteria along which they are balancing.
 
 The program first examines the overall distribution of values across the balance criteria and sets a ceiling for the number each group can contain (e.g. 15 males). 
 
