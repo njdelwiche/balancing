@@ -6,21 +6,26 @@ from random import randint
 import sys
 
 MAX_ATTEMPTS = 25
+MAX_ATTEMPTS_LARGE = 100
 
 def modify(original,unbalanced, item, add):    
-    rand_int = randint(0,total//num_groups - 1)
+    large_int = randint(0, len(roster) - 1)
+    small_int = randint(0, len(original) - 1)
     
     if add == False:
         # continue searching for a random to-be-swapped or swapping item if they are unsuitable  
-        while original.iloc[rand_int][item] != unbalanced or roster.iloc[rand_int][item] == unbalanced:
-            rand_int = randint(0,total//num_groups - 1)
+        while original.iloc[small_int][item] != unbalanced or roster.iloc[large_int][item] == unbalanced:
+            large_int = randint(0, len(roster) - 1)
+            small_int = rand_int(0, len(original) - 1)
     else:
         # continue searching for a random to-be-swapped or swapping item if they are unsuitable  
-        while roster.iloc[rand_int][item] != unbalanced:
-            rand_int = randint(0,total//num_groups - 1)
+        attempts = 0
+        while roster.iloc[large_int][item] != unbalanced and attempts < MAX_ATTEMPTS_LARGE:
+            attempts += 1
+            large_int = randint(0, len(roster) - 1)
 
     # swap two random items
-    original.iloc[rand_int], roster.iloc[rand_int] = roster.iloc[rand_int].copy(), original.iloc[rand_int].copy()
+    original.iloc[small_int], roster.iloc[large_int] = roster.iloc[large_int].copy(), original.iloc[small_int].copy()
 
 
 def check_all(group, desired, criteria_list):
