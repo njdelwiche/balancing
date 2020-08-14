@@ -5,23 +5,7 @@ import random
 from random import randint
 import sys
 
-roster = pd.read_csv(sys.argv[1])
-total = len(roster)
-num_groups = int(sys.argv[2])
-
-# select your criteria
-while True:
-    try:
-        criteria_list = input(f"Select Eligible criteria (separate by a comma for multiple): {roster.columns.values}\n").split(',')
-        break
-    except:
-        print("Not a valid criteria")
-
-# setting up the groups column for later
-roster['Group'] = 0
-
-# will store the groups in a list
-agg_groups= []
+MAX_ATTEMPTS = 25
 
 def modify(original,unbalanced, item, add):    
     rand_int = randint(0,total//num_groups - 1)
@@ -38,14 +22,16 @@ def modify(original,unbalanced, item, add):
     # swap two random items
     original.iloc[rand_int], roster.iloc[rand_int] = roster.iloc[rand_int].copy(), original.iloc[rand_int].copy()
 
-def check_all(group, desired):
-    while True:
-        counter = 0
-        
+
+def check_all(group, desired, criteria_list):
+    attempts = 0
+    while attempts < MAX_ATTEMPTS:
+        attempts += 1
+        counter = 0        
         # go through the values of the balancing criteria 
         for key in desired.keys():                     
             # finding the actual distribution of a group
-            actual = make_dict(group,criteria_list, upper=False)
+            actual = make_dict(group, criteria_list, upper=False)
             try:
                 # if there are more than maximally allowed
                 if actual[key][0] > desired[key][0]:
@@ -66,14 +52,14 @@ def check_all(group, desired):
                     # add the item that is underbalanced
                     modify(group, key, desired[key][1], add = True)
                 else :
-                    print(e)                                           
+                    pass
+                    #print(f"Could not find {e}, but continuing.")                                           
         # If counter still at 0 then it is balanced 
         if counter == 0:
-            print('BALANCED')
             break
 
 
-def make_dict(group, criteria,upper):
+def make_dict(group, criteria, upper):
     my_dict = {}
     for criterion in criteria:
         uniques = group[criterion].value_counts()
@@ -87,31 +73,52 @@ def make_dict(group, criteria,upper):
                 my_dict[x] = [uniques[x], criterion]
     return my_dict
 
-# make the dictionary with all the correct values for the criteria selected
-desired_dict = make_dict(roster, criteria_list, upper = True)
 
-for x in range(num_groups - 1):
-    # randomly create the groups
-    bit = roster.sample(total//num_groups)
-    agg_groups.append(bit)
-    
-    # delete that part of the dataframe
-    roster.drop(bit.index, inplace=True)
-    check_all(agg_groups[x], desired_dict)
-    
-    print(x)
-    
-agg_groups.append(roster.sample(total//num_groups))
+def run_balance():
+    # select your criteria
+    while True:
+        try:
+            criteria = input(f"Select Eligible criteria (separate by a comma for multiple): {roster.columns.values}\n").split(',')
+            break
+        except:
+            print("Not a valid criteria")
 
-# assign the labels to the newly balanced groups
-for i, x in enumerate(agg_groups):
-    x['Group'] = i + 1
+    # setting up the groups column for later
+    roster['Group'] = 0
+    # will store the groups in a list
+    agg_groups= []
+    # make the dictionary with all the correct values for the criteria selected
+    desired_dict = make_dict(roster, criteria, upper=True)
 
-# merging all the groups together 
-my_data = pd.concat(agg_groups)
+    for x in range(num_groups - 1):
+        # randomly create the groups
+        bit = roster.sample(total//num_groups)
+        agg_groups.append(bit)
+        
+        # delete that part of the dataframe
+        roster.drop(bit.index, inplace=True)
+        check_all(agg_groups[x], desired_dict, criteria)
+        print(x)
+        
+    agg_groups.append(roster.sample(total//num_groups))
 
-# save the csv file
-my_data.to_csv(f"{sys.argv[1].strip('.csv')}_Balanced.csv", index=False)
+    # assign the labels to the newly balanced groups
+    for i, x in enumerate(agg_groups):
+        x['Group'] = i + 1
 
-# checking the criteria distributions that should be balanced
-print([[x[y].value_counts().sort_index() for x in agg_groups] for y in criteria_list])
+    # merging all the groups together 
+    my_data = pd.concat(agg_groups)
+
+    # save the csv file
+    my_data.to_csv(f"{sys.argv[1].strip('.csv')}_Balanced.csv", index=False)
+
+    # checking the criteria distributions that should be balanced
+    print([[x[y].value_counts().sort_index() for x in agg_groups] for y in criteria])
+    return True
+
+
+if __name__ == '__main__':
+    num_groups = int(sys.argv[2])
+    roster = pd.read_csv(sys.argv[1])
+    total = len(roster)
+    run_balance()

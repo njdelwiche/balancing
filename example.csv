@@ -24,3 +24,478 @@ w,m,3,Idaho
 x,f,2,Connecticut
 y,f,1,Colorado
 z,x,1,Wisconsin
+j',f,2,Rhode Island
+m(,f,2,South Carolina
+q!,m,4,California
+j!,m,3,Kansas
+h*,m,4,Wyoming
+r',f,4,Louisiana
+y#,f,3,Vermont
+"k""",m,1,West Virginia
+a),m,1,Oklahoma
+m!,m,4,Pennsylvania
+a%,m,2,Pennsylvania
+r-,f,1,Vermont
+h',m,4,South Dakota
+i.,f,3,West Virginia
+z),m,3,Indiana
+s!,f,4,Indiana
+a/,f,2,California
+g/,f,2,Nevada
+u$,f,1,Georgia
+r),f,1,Missouri
+x.,m,4,Kansas
+y+,f,2,New Jersey
+v-,f,1,Florida
+k*,m,1,Massachusetts
+h(,f,3,Illinois
+l#,f,4,California
+u+,f,1,West Virginia
+g.,f,3,Tennessee
+u-,f,4,Kansas
+"l,",f,1,New York
+y+,m,3,Oregon
+d/,f,3,Utah
+e-,m,1,Alabama
+"c""",f,1,North Dakota
+t%,m,3,West Virginia
+"e,",f,2,Alaska
+x),f,2,Rhode Island
+l',f,4,Minnesota
+q#,m,2,Arizona
+r/,f,4,Virginia
+g/,f,1,Alaska
+q.,f,4,California
+v%,f,4,Alaska
+n+,m,1,Indiana
+h&,f,2,New Jersey
+y%,m,1,Nebraska
+c*,f,1,Tennessee
+a+,m,1,Ohio
+u!,f,3,New Jersey
+p$,m,3,Arizona
+"f,",f,2,Connecticut
+y%,f,2,Idaho
+"v,",m,3,Washington
+s%,f,2,Kentucky
+"t""",m,3,Alaska
+o-,f,3,Arizona
+a',m,4,Indiana
+"e,",f,4,West Virginia
+f-,f,2,Vermont
+l%,f,1,Iowa
+j.,m,4,Nevada
+c/,f,4,Michigan
+"j""",m,4,New Jersey
+"e""",m,1,Mississippi
+t),f,4,Nevada
+r&,f,1,Virginia
+"j,",m,1,Oklahoma
+y#,m,2,North Dakota
+s',f,1,Oregon
+j/,m,2,Pennsylvania
+r',m,2,Montana
+p-,f,2,Mississippi
+l*,f,1,Kansas
+d#,f,4,North Carolina
+k!,f,2,Montana
+z$,m,1,Oregon
+j.,m,3,Colorado
+"q,",m,1,Delaware
+"c,",m,1,Pennsylvania
+"m,",m,3,Alabama
+d!,m,4,West Virginia
+u/,m,4,Connecticut
+w$,m,3,Texas
+b),f,3,Alabama
+u%,f,4,North Dakota
+"n,",f,2,Alabama
+n),f,4,Wyoming
+t',f,2,Montana
+v),m,3,Montana
+a),m,4,Indiana
+u#,f,1,Mississippi
+f.,f,3,Florida
+o&,m,3,Oregon
+i!,f,1,Pennsylvania
+o*,f,1,Minnesota
+"g""",f,3,North Dakota
+e&,f,3,Arizona
+h.,m,4,Illinois
+"m""",f,1,Delaware
+"h,",f,2,Kansas
+j(,f,3,Massachusetts
+j),f,4,Iowa
+"b,",m,3,Arkansas
+f#,m,3,Ohio
+j/,f,4,Iowa
+r+,m,4,Pennsylvania
+m%,m,1,Texas
+h$,m,2,New Mexico
+m(,m,2,Florida
+k(,f,2,Michigan
+e-,f,2,Wisconsin
+"m,",f,4,Louisiana
+o!,f,1,North Dakota
+r/,f,2,Maryland
+"x""",f,3,Maine
+p#,m,2,Utah
+"i""",m,1,Arkansas
+"x,",m,2,Arkansas
+k',m,1,Maine
+f%,f,3,Maryland
+y$,f,2,Colorado
+u&,m,1,Vermont
+v',f,3,West Virginia
+d/,f,4,Kentucky
+f!,m,4,West Virginia
+"s,",f,4,New Mexico
+y&,f,4,New Mexico
+e.,m,1,Ohio
+"e""",f,4,Hawaii
+m+,m,4,North Carolina
+y-,m,1,Maryland
+s&,m,4,Montana
+t$,f,4,Iowa
+p),m,1,Vermont
+g),f,1,Tennessee
+"d,",f,4,Michigan
+y+,m,4,Kansas
+i$,m,3,Montana
+e-,m,3,Alaska
+s$,m,1,Kentucky
+t!,m,3,South Carolina
+n',f,4,Hawaii
+k-,m,1,Oklahoma
+e-,m,1,North Dakota
+c),f,3,Maryland
+c-,m,2,Pennsylvania
+"s""",m,4,Georgia
+c!,m,3,Wyoming
+d*,f,1,Mississippi
+s!,f,4,Missouri
+x&,m,1,Arkansas
+w%,m,4,Texas
+l-,m,3,New Hampshire
+k%,f,1,Wyoming
+c',m,3,Oklahoma
+g(,f,1,Arkansas
+x),m,2,New Mexico
+g+,f,3,Texas
+w-,m,1,West Virginia
+"y,",m,4,Kentucky
+c+,m,3,Nebraska
+t*,f,4,Montana
+k',f,3,Montana
+u*,f,4,Alaska
+k%,m,1,New Jersey
+g&,m,3,Wisconsin
+j+,f,3,Maryland
+i.,f,4,Iowa
+m!,m,3,Delaware
+b*,m,1,Minnesota
+x+,f,1,Colorado
+m$,f,2,North Carolina
+"o,",f,1,Connecticut
+o!,f,3,New Mexico
+"e,",f,1,Alabama
+b/,m,3,California
+x/,m,4,Colorado
+g+,m,4,Alaska
+n*,f,3,Wisconsin
+c.,f,1,Arizona
+s*,f,4,Ohio
+s/,f,2,Louisiana
+k+,m,1,Pennsylvania
+b/,m,3,Ohio
+t+,f,2,Arkansas
+c.,m,3,Michigan
+a%,m,2,Nevada
+"b""",f,1,Louisiana
+a(,m,4,Texas
+d),f,1,New Hampshire
+v',f,4,Montana
+u+,m,2,Tennessee
+p),f,4,Rhode Island
+w.,f,3,Hawaii
+u$,m,2,Nevada
+i&,m,1,Nevada
+n%,m,3,Nebraska
+n&,m,3,Indiana
+f',f,2,Iowa
+n/,f,2,Utah
+v',m,3,Nebraska
+d/,f,1,Arizona
+e),f,1,Wyoming
+z/,m,4,New Jersey
+z#,f,3,West Virginia
+h%,f,1,Massachusetts
+"b,",m,4,Connecticut
+"q,",m,4,Utah
+l(,f,3,Alabama
+c/,f,3,Rhode Island
+a),f,1,Idaho
+e-,f,2,Connecticut
+d!,m,4,Virginia
+o.,f,3,Indiana
+k$,m,3,California
+m%,f,4,New York
+v#,m,4,Arizona
+j.,f,2,Mississippi
+g/,m,1,Alaska
+m+,m,2,Missouri
+f%,m,1,Oklahoma
+v$,f,2,New Mexico
+k',f,4,South Dakota
+z#,m,1,South Carolina
+z&,f,3,Alaska
+d+,m,4,Arkansas
+u',m,3,Wyoming
+v&,m,1,Rhode Island
+e%,f,4,Louisiana
+w%,f,1,South Dakota
+t#,m,2,Michigan
+c$,f,2,Texas
+w(,f,2,Alabama
+m(,m,4,Washington
+w%,f,4,Massachusetts
+r$,m,2,Missouri
+r!,f,3,Indiana
+z(,f,3,Wisconsin
+i),f,2,Montana
+"n""",m,4,Utah
+i!,m,1,Connecticut
+q-,m,4,New Hampshire
+"i,",f,1,New Jersey
+z&,m,4,Connecticut
+v),f,3,Minnesota
+"b,",m,3,Mississippi
+i!,f,2,Pennsylvania
+u/,m,4,Washington
+m*,m,1,Pennsylvania
+g.,f,4,South Dakota
+l(,m,2,Indiana
+e$,m,4,Hawaii
+f*,f,2,Alabama
+n-,f,3,Virginia
+v),m,1,Wisconsin
+q#,m,4,Connecticut
+w-,m,4,Alabama
+a.,m,4,Rhode Island
+p',m,4,Montana
+q-,m,3,Louisiana
+f$,m,1,West Virginia
+h%,m,2,Texas
+o+,m,1,Virginia
+"m""",f,4,South Carolina
+b(,f,1,Arkansas
+l+,f,3,Kansas
+"y""",f,4,Oregon
+y!,m,4,Connecticut
+q&,f,2,Alabama
+r*,f,4,Vermont
+u%,f,1,Nebraska
+a%,m,3,Pennsylvania
+w-,f,4,Florida
+"a""",f,4,Vermont
+s&,m,3,Arkansas
+h#,f,3,Wyoming
+"m,",f,1,Michigan
+x),m,2,Pennsylvania
+t$,m,1,Missouri
+o/,f,4,Pennsylvania
+x(,m,4,Pennsylvania
+y&,f,3,Kentucky
+s.,f,3,West Virginia
+f%,f,4,Tennessee
+b),m,3,Rhode Island
+b+,f,2,Wisconsin
+u(,m,4,Vermont
+v$,f,2,Kansas
+q+,f,1,Connecticut
+l',f,2,Maryland
+j%,f,4,Mississippi
+"k""",f,3,Connecticut
+g&,m,4,Colorado
+h*,f,2,Connecticut
+"h,",m,1,Missouri
+y!,m,2,Wisconsin
+j(,m,4,New York
+k',m,2,New Jersey
+e%,f,3,Nebraska
+e!,m,1,Alaska
+x-,m,1,Nevada
+"w""",f,1,Pennsylvania
+x%,m,1,Oklahoma
+t/,f,3,Idaho
+d$,f,4,Colorado
+c/,m,1,Kansas
+m',f,4,Idaho
+c$,m,1,Oklahoma
+j$,m,2,Nevada
+m*,m,4,Hawaii
+x/,f,2,Oklahoma
+"n,",m,1,Rhode Island
+i/,f,1,Alabama
+g',f,4,Indiana
+o*,f,3,Wyoming
+d*,f,2,South Carolina
+s+,m,1,Maine
+e(,f,3,Washington
+z*,f,1,Washington
+"j""",m,2,Nebraska
+g),f,1,Colorado
+x$,m,1,California
+w/,f,2,Louisiana
+b),f,3,Hawaii
+g-,f,4,North Dakota
+l$,m,3,Indiana
+i(,f,4,Nebraska
+g%,f,2,Nevada
+w&,m,2,Rhode Island
+q&,m,2,Arizona
+"z,",f,2,Illinois
+"c,",f,2,Tennessee
+j!,m,4,Wyoming
+z*,m,4,Maine
+q%,f,1,New Mexico
+k),f,4,Florida
+"t""",m,3,Indiana
+c&,f,1,Connecticut
+v%,f,4,West Virginia
+l*,m,1,New York
+"o,",m,2,Maine
+w',f,4,Mississippi
+"i""",m,1,West Virginia
+w',m,2,Texas
+w-,m,4,Maryland
+r%,m,3,Washington
+x+,m,2,Hawaii
+"n""",f,4,Nevada
+y&,m,4,Arkansas
+p-,m,2,New Jersey
+i',f,2,Michigan
+m-,f,1,Wyoming
+a+,m,1,Oregon
+b',m,2,Connecticut
+"e""",f,2,Arkansas
+r&,f,1,Arizona
+r+,m,1,Kansas
+e%,m,2,Missouri
+n$,f,1,Iowa
+"u,",m,2,New Mexico
+"m""",f,2,Maine
+y#,m,3,Nevada
+z&,f,4,Ohio
+v*,f,2,Missouri
+x),m,1,Alabama
+"g""",f,2,Alaska
+n$,m,3,Kentucky
+"b,",m,2,North Carolina
+m&,f,2,Montana
+m',m,4,Idaho
+u+,m,4,Ohio
+"o,",f,2,California
+b+,f,1,Utah
+g*,f,2,Pennsylvania
+x-,f,2,Wyoming
+x),f,3,Rhode Island
+m%,f,3,New Mexico
+o(,f,4,Florida
+b.,f,4,Indiana
+w',f,2,New Mexico
+g-,m,2,Washington
+y',m,3,Vermont
+v!,f,2,Hawaii
+b%,m,2,New York
+i#,f,4,Alabama
+o$,f,1,Minnesota
+e!,f,3,Hawaii
+r',f,3,New Mexico
+e+,m,4,Nevada
+u/,m,3,Nevada
+k.,f,3,Colorado
+p(,m,4,Minnesota
+s.,m,3,Texas
+k+,f,2,Nebraska
+v+,m,1,South Dakota
+l&,f,3,Pennsylvania
+k*,f,4,Iowa
+f!,f,4,Indiana
+f*,f,3,Maine
+k.,m,4,Idaho
+"l""",m,4,Louisiana
+"b""",m,1,Mississippi
+q(,f,1,New Jersey
+c.,m,3,California
+b*,m,1,South Carolina
+y%,f,3,Alaska
+v',f,2,California
+n$,f,3,Washington
+h$,m,3,Idaho
+o',f,4,Illinois
+j$,m,2,Indiana
+k#,f,1,Oregon
+a),m,2,North Carolina
+y(,m,1,Vermont
+a#,m,1,West Virginia
+"k""",f,3,Vermont
+k%,m,1,Ohio
+r$,f,1,Colorado
+e$,m,4,New Hampshire
+q%,f,3,West Virginia
+t',m,3,Washington
+n),f,1,Missouri
+e',f,2,Minnesota
+h&,f,3,Iowa
+h),f,1,Colorado
+s$,m,3,Colorado
+w&,m,4,Arkansas
+l$,m,3,Florida
+s/,m,3,Alaska
+p!,f,4,Ohio
+a#,f,2,South Carolina
+y%,m,1,Alaska
+"a,",f,2,Arizona
+y&,f,4,North Dakota
+"u,",f,3,Iowa
+b+,m,1,Arkansas
+"x""",f,3,Pennsylvania
+u&,f,2,Indiana
+"m""",f,1,Kansas
+w&,f,3,Michigan
+x-,m,2,Louisiana
+t/,f,4,Alaska
+f),f,4,Alaska
+z$,m,2,Kentucky
+m&,f,2,Kentucky
+x(,f,3,Florida
+"l,",m,2,Idaho
+a#,m,4,Colorado
+t.,m,4,California
+v%,m,3,Texas
+g/,f,1,Georgia
+"x""",m,1,Louisiana
+k-,m,1,Tennessee
+o.,f,3,Michigan
+r',m,1,Kansas
+o/,m,1,Nebraska
+x*,m,4,Missouri
+w%,f,1,Florida
+"j""",f,1,Indiana
+r*,f,3,Illinois
+"x,",f,3,Ohio
+y&,m,3,Alaska
+"y""",f,1,Texas
+a#,f,4,Louisiana
+c$,m,4,Washington
+l(,m,3,Virginia
+j),m,4,Mississippi
+b!,f,3,South Dakota
+"t""",f,3,New Jersey
+z/,m,4,Mississippi
+"m,",m,1,Ohio
+s!,m,3,Alabama
+q#,m,1,Kentucky
+"q,",f,2,Ohio
+z/,f,2,Maine
