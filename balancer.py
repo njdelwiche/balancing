@@ -51,7 +51,6 @@ def check_all(group, desired, criteria_list):
                     modify(group, key, desired[key][1], add=True)
                                                
             except Exception as e:
-                
                 # if the sample has 0 of the desired keys the search will run an error                    
                 if desired[key][0] > 1 and key not in actual:
                     counter += 1
@@ -108,7 +107,7 @@ def run_balance():
     my_data = pd.concat(agg_groups)
 
     # save the csv file
-    my_data.to_csv(f"{sys.argv[1].strip('.csv')}_Balanced.csv", index=False)
+    my_data.to_csv(f"{sys.argv[1].strip('.csv')}_BALANCED.csv", index=False)
 
     # checking the criteria distributions that should be balanced
     print([[x[y].value_counts().sort_index() for x in agg_groups] for y in criteria])
@@ -116,13 +115,14 @@ def run_balance():
     for x in agg_groups:
         row = []
         for y in criteria:
-            row += x[y].value_counts().sort_index().tolist()
+            options = sorted(options_dict[y])
+            values_dict = x[y].value_counts().to_dict()
+            row += [values_dict.get(key) if key in values_dict else 0 for key in options]
         rows.append(row)
-    #test = [x[y].value_counts().tolist() for x in agg_groups for y in criteria]
 
-    # testing out a csv report
+    # Produce CSV report of the balances
     row_list = [column_names] + rows
-    with open('test.csv', 'w', newline='') as file:
+    with open(f'{sys.argv[1]}_REPORT.csv', 'w', newline='') as file:
         writer = csv.writer(file)
         writer.writerows(row_list)
     return True
@@ -142,6 +142,7 @@ if __name__ == '__main__':
 
     column_names = [] 
     for row in criteria:
-        column_names += (roster[row].unique().tolist())
+        column_names += sorted(roster[row].unique().tolist())
+    options_dict = {row: roster[row].unique().tolist() for row in criteria}
     total = len(roster)
     run_balance()
