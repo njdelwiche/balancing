@@ -1,3 +1,4 @@
+import csv
 import pandas as pd
 import numpy as np
 import math
@@ -6,7 +7,7 @@ from random import randint
 import sys
 
 MAX_ATTEMPTS = 25
-MAX_ATTEMPTS_LARGE = 100
+MAX_ATTEMPTS_LARGE = 500
 
 def modify(original,unbalanced, item, add):    
     large_int = randint(0, len(roster) - 1)
@@ -80,14 +81,6 @@ def make_dict(group, criteria, upper):
 
 
 def run_balance():
-    # select your criteria
-    while True:
-        try:
-            criteria = input(f"Select Eligible criteria (separate by a comma for multiple): {roster.columns.values}\n").split(',')
-            break
-        except:
-            print("Not a valid criteria")
-
     # setting up the groups column for later
     roster['Group'] = 0
     # will store the groups in a list
@@ -119,11 +112,36 @@ def run_balance():
 
     # checking the criteria distributions that should be balanced
     print([[x[y].value_counts().sort_index() for x in agg_groups] for y in criteria])
+    rows = []
+    for x in agg_groups:
+        row = []
+        for y in criteria:
+            row += x[y].value_counts().sort_index().tolist()
+        rows.append(row)
+    #test = [x[y].value_counts().tolist() for x in agg_groups for y in criteria]
+
+    # testing out a csv report
+    row_list = [column_names] + rows
+    with open('test.csv', 'w', newline='') as file:
+        writer = csv.writer(file)
+        writer.writerows(row_list)
     return True
 
 
 if __name__ == '__main__':
     num_groups = int(sys.argv[2])
     roster = pd.read_csv(sys.argv[1])
+
+    # select your criteria
+    while True:
+        try:
+            criteria = input(f"Select Eligible criteria (separate by a comma for multiple): {roster.columns.values}\n").split(',')
+            break
+        except:
+            print("Not a valid criteria")
+
+    column_names = [] 
+    for row in criteria:
+        column_names += (roster[row].unique().tolist())
     total = len(roster)
     run_balance()
