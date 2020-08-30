@@ -9,11 +9,11 @@ import sys
 MAX_ATTEMPTS = 25
 MAX_ATTEMPTS_LARGE = 500
 
-def modify(original,unbalanced, item, add):    
+def modify(original,unbalanced, item, add=True):    
     large_int = randint(0, len(roster) - 1)
     small_int = randint(0, len(original) - 1)
     
-    if add == False:
+    if not add:
         # continue searching for a random to-be-swapped or swapping item if they are unsuitable  
         while original.iloc[small_int][item] != unbalanced or roster.iloc[large_int][item] == unbalanced:
             large_int = randint(0, len(roster) - 1)
@@ -110,7 +110,6 @@ def run_balance():
     my_data.to_csv(f"{sys.argv[1].strip('.csv')}_BALANCED.csv", index=False)
 
     # checking the criteria distributions that should be balanced
-    print([[x[y].value_counts().sort_index() for x in agg_groups] for y in criteria])
     rows = []
     for x in agg_groups:
         row = []
